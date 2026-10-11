@@ -179,11 +179,13 @@ orqali maxsus **Dialer (Telefon) ilovasi** o'rnatiladi va u yozib olishni ochadi
 
 - 💻 **Windows kompyuter**
 - 🔌 **USB kabel**
-- 📥 **Arxiv fayl** — 👉 **[Yuklab olish](https://t.me/c/3177623007/75)**
+- 🛠️ **ADB (Platform Tools)** — 👉 **[Yuklab olish](https://developer.android.com/tools/releases/platform-tools)**
+- 📥 **Arxiv fayl** — 👉 **[Yuklab olish](https://drive.google.com/file/d/1d4SBXVLuWRWVTJP8pjzYQyhHOipb_wc3/view)**
 
 > [!NOTE]
-> Yuklab olish havolasi **yopiq Telegram kanalida**. Ochilmasa —
-> qo'llab-quvvatlash xizmatiga murojaat qiling, fayl yuboriladi.
+> **ADB nima?** Bu kompyuter telefon bilan "gaplashishi" uchun kerak bo'lgan
+> kichik dastur. Usiz `.bat` fayl telefonni **ko'rmaydi** va ishlamaydi.
+> ADB **Platform Tools** paketi ichida keladi.
 
 ### 📋 Bosqichma-bosqich
 
@@ -216,16 +218,43 @@ orqali maxsus **Dialer (Telefon) ilovasi** o'rnatiladi va u yozib olishni ochadi
 </details>
 
 <details open>
-<summary><b>3️⃣ Faylni ishga tushirish</b></summary>
+<summary><b>3️⃣ Kompyuterga ADB (Platform Tools) o'rnatish</b></summary>
 
 <br>
 
-1. Arxivni kompyuterga **yuklab oling**
+#### 🎬 Video yo'riqnoma
+
+<div align="center">
+
+[![Platform Tools video](https://img.youtube.com/vi/JQrMvecOAeE/hqdefault.jpg)](https://youtu.be/JQrMvecOAeE?t=39)
+
+**[▶️ Videoni ochish](https://youtu.be/JQrMvecOAeE?t=39)** *(0:39 dan boshlanadi)*
+
+</div>
+
+1. 👉 **[developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)** saytiga kiring
+2. **"Download SDK Platform-Tools for Windows"** tugmasini bosing
+3. Shartlarga rozilik belgisini qo'ying va **yuklab oling**
+4. Yuklangan arxivni **oching** — ichidan **`platform-tools`** papkasi chiqadi
+5. Bu papkani qulay joyga qo'ying, masalan: **`C:\platform-tools`**
+
+> 💡 Papka ichida **`adb.exe`** fayli bo'lishi kerak — demak hammasi to'g'ri.
+
+</details>
+
+<details open>
+<summary><b>4️⃣ Faylni ishga tushirish</b></summary>
+
+<br>
+
+1. Arxivni **[Google Drive dan](https://drive.google.com/file/d/1d4SBXVLuWRWVTJP8pjzYQyhHOipb_wc3/view)** kompyuterga **yuklab oling**
 2. Arxivni **oching** (*Extract / Ochish* — WinRAR yoki 7-Zip orqali)
-3. Telefonni USB kabel bilan kompyuterga ulang
-4. Ichidagi **`Install_Xiaomi_Dialer.bat`** faylini **ikki marta bosing**
-5. Qora oyna (buyruqlar oynasi) ochiladi — **yopmang**, tugashini kuting
-6. Telefonda so'rov chiqsa — **Ruxsat berish** / **O'rnatish** ni bosing
+3. Ichidagi **barcha fayllarni** `platform-tools` papkasiga (**`adb.exe`** yoniga) **ko'chiring**
+4. Telefonni USB kabel bilan kompyuterga ulang
+5. Telefonda **"USB debugging'ga ruxsat berilsinmi?"** chiqsa — **Ruxsat berish** ni bosing
+6. **`Install_Xiaomi_Dialer.bat`** faylini **ikki marta bosing**
+7. Qora oyna (buyruqlar oynasi) ochiladi — **yopmang**, tugashini kuting
+8. Telefonda so'rov chiqsa — **Ruxsat berish** / **O'rnatish** ni bosing
 
 </details>
 
